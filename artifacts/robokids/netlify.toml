@@ -1,0 +1,15 @@
+[build]
+  base    = "."
+  command = "corepack enable pnpm && pnpm install --frozen-lockfile && pnpm --filter @workspace/robokids run build"
+  publish = "artifacts/robokids/dist/public"
+
+[build.environment]
+  NODE_VERSION = "20"
+  BASE_PATH    = "/"
+  PORT         = "3000"
+  NODE_ENV     = "production"
+
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
