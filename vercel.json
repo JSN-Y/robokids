@@ -1,6 +1,7 @@
 {
   "version": 2,
   "installCommand": "corepack enable pnpm && pnpm install --no-frozen-lockfile",
+  "buildCommand": "echo skip",
   "functions": {
     "api/index.ts": {
       "includeFiles": "lib/**"
