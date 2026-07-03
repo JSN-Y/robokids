@@ -3,8 +3,8 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import session from "express-session";
 import connectPgSimple from "connect-pg-simple";
-import { logger } from "./lib/logger";
-import router from "./routes";
+import { logger } from "./lib/logger.js";
+import router from "./routes/index.js";
 
 const PgStore = connectPgSimple(session);
 const app = express();
