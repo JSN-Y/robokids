@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "installCommand": "corepack enable pnpm && pnpm install --frozen-lockfile",
+  "installCommand": "corepack enable pnpm@10 && pnpm install --no-frozen-lockfile",
   "builds": [
     {
       "src": "artifacts/api-server/src/app.ts",
